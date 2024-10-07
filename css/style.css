@@ -1,125 +1,3 @@
-.research-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.research-item {
-    background-color: #fff;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    text-align: left;
-}
-
-.research-item h3 {
-    color: #007BFF;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-    padding-top: 60px; /* To avoid content being hidden behind the fixed nav */
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensures the nav stays on top of other elements */
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.section {
-    padding: 3rem 0;
-    text-align: center;
-}
-
-.profile-image {
-    margin: 0 auto;
-    max-width: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.profile-image img {
-    width: 100%;
-    height: auto;
-}
-
-.about-text {
-    margin-top: 20px;
-}
-
-h1, h2 {
-    color: #333;
-}
-
-.portfolio-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.portfolio-item {
-    background-color: #fff;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-}
-
-.portfolio-item h3 {
-    color: #007BFF;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-@media (max-width: 768px) {
-    .portfolio-items {
-        flex-direction: column;
-    }
-
-    .portfolio-item {
-        width: 90%;
-        margin: 10px auto;
-    }
-        }
 /* General styles */
 * {
     margin: 0;
@@ -209,3 +87,89 @@ nav ul li a {
         display: flex;
     }
 }
+
+/* Section styles */
+.section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.profile-image {
+    margin: 0 auto;
+    max-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+}
+
+.about-text {
+    margin-top: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.portfolio-item h3 {
+    color: #007BFF;
+}
+
+/* Research Papers styles */
+.research-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.research-item {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    text-align: left;
+}
+
+.research-item h3 {
+    color: #007BFF;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .portfolio-items {
+        flex-direction: column;
+    }
+
+    .portfolio-item {
+        width: 90%;
+        margin: 10px auto;
+    }
+    }
