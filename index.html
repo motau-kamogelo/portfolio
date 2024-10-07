@@ -3,83 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Kamogelo Motau">
     <title>Kamogelo Motau - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Kamogelo Motau</h1>
-            <p>Lecturer | Cybersecurity Enthusiast | Data Analyst</p>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am Kamogelo Motau, an experienced IT lecturer and professional specializing in networking, cybersecurity, databases, and Power BI. I am passionate about teaching and advancing my skills in data analysis and information security.</p>
+    <section id="about" class="section">
+        <div class="profile-image">
+            <img src="profile.jpg" alt="Kamogelo Motau">
+        </div>
+        <div class="about-text">
+            <h1>Kamogelo Motau</h1>
+            <p>IT Support Technician with over 5 years of experience. Proficient in server management, IT infrastructure, cybersecurity, network architecture, and technical training. Passionate about solving technical problems and mentoring students.</p>
+            <p>I specialize in data analysis with Power BI, Python, SQL, and designed virtual labs and networks for educational and practical environments.</p>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <h3>Power BI Dashboards</h3>
-                    <p>Visualize key metrics and trends using Power BI.</p>
-                    <a href="#">View Dashboards</a>
-                </div>
-                <div class="project-item">
-                    <h3>Cybersecurity Virtual Labs</h3>
-                    <p>Explore hands-on cybersecurity virtual labs.</p>
-                    <a href="#">View Labs</a>
-                </div>
-                <div class="project-item">
-                    <h3>Networking Projects</h3>
-                    <p>Showcasing practical networking solutions and configurations.</p>
-                    <a href="#">View Networking Projects</a>
-                </div>
+    <section id="portfolio" class="section">
+        <h2>Portfolio</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <h3>Power BI Dashboards</h3>
+                <p>Showcasing data insights and analytics with Power BI. Expertise in DAX and M languages.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Virtual Labs for Cybersecurity</h3>
+                <p>Hands-on labs for assessing vulnerabilities, malware analysis, and firewall configurations.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Python Codes</h3>
+                <p>Projects demonstrating data analysis, automation scripts, and algorithm implementations in Python.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>SQL Statements</h3>
+                <p>Database management, queries, and optimization through efficient SQL queries.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Designed Networks</h3>
+                <p>Expert in network architecture and design, including WAN, LAN, and Wireless Networks.</p>
             </div>
         </div>
     </section>
 
-    <section id="research">
-        <div class="container">
-            <h2>Research Papers</h2>
-            <p>Investigating the Vulnerability of Young People in Polokwane to social engineering scams</p>
-            <a href="#">Read Paper</a>
-        </div>
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:motau.levis@gmail.com">motau.levis@gmail.com</a></p>
+        <p>Phone: 072 786 6462</p>
     </section>
 
-    <footer id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:kamogelo@example.com">kamogelo@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/kamogelo-motau/">linkedin.com/in/kamogelo-motau</a></p>
-        </div>
+    <footer>
+        <p>&copy; 2024 Kamogelo Motau</p>
     </footer>
-    <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        });
-    });
-    </script>
 </body>
-          </html>
+</html>
