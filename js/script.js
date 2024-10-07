@@ -1,3 +1,8 @@
+document.getElementById('hamburger').addEventListener('click', function () {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+});
+
 document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
