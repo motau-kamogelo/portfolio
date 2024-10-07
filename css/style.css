@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+    padding-top: 60px; /* To avoid content being hidden behind the fixed nav */
 }
 
 header {
@@ -16,11 +17,15 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the nav stays on top of other elements */
 }
 
 nav ul {
     list-style: none;
-    position: fixed;
 }
 
 nav ul li {
