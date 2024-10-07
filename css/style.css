@@ -20,6 +20,7 @@ header {
 
 nav ul {
     list-style: none;
+    position: fixed;
 }
 
 nav ul li {
